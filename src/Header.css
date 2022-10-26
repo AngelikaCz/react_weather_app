@@ -1,0 +1,9 @@
+form {
+  padding: 10px;
+  text-align: center;
+}
+
+.Header .form {
+  position: relative;
+  left: 10px;
+}
