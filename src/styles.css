@@ -8,3 +8,8 @@
   font-weight: bold;
   color: white;
 }
+
+.Background {
+  background-image: url("./clouds_weather_app.jpg");
+  max-width: 100%;
+}
