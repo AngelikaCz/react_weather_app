@@ -5,7 +5,9 @@ import Header from "./Header";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <Header />
-  </React.StrictMode>
+  <div style={{ backgroundImage: `url(${background})` }}>
+    <div className="Main">
+      <Header />
+    </div>
+  </div>
 );
