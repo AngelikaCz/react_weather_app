@@ -1,24 +1,31 @@
 import React from "react";
 
-import "./Forecast.css";
+import "./Footer.css";
+import "./styles.css";
 
-export default function Forecast() {
+export default function Footer() {
   return (
-    <div>
-      {" "}
-      <div className="city">
-        <span id="city">Warsaw</span>, <span id="date">Sunday 14:00</span>
-      </div>
-      <div id="description">Cloudy</div>
-      <div className="temperature">
-        <span id="temperature">☀19</span>°<span className="units">C</span>
-      </div>
-      <div className="last_section">
-        Humidity <span id="humidity">60</span>% Wind
-        <span id="wind"> 4</span>km/h
-        <hr />
-      </div>
-      <div className="forecast" id="forecast"></div>
-    </div>
+    <footer>
+      This project was coded by Angelika Czerwińska and is open-sourced on
+      <a
+        href="https://github.com/AngelikaCz/Weather_app_project"
+        target="_blank"
+        rel="noreferrer"
+        className="link"
+      >
+        {" "}
+        GitHub{" "}
+      </a>
+      and hosted on
+      <a
+        href="https://sparkly-kitten-ca6639.netlify.app"
+        target="_blank"
+        rel="noreferrer"
+        className="link"
+      >
+        {" "}
+        Netlify.
+      </a>
+    </footer>
   );
 }
