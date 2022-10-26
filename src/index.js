@@ -1,13 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css";
+import "./styles.css";
 import Header from "./Header";
+import Forecast from "./Forecast";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <div style={{ backgroundImage: `url(${background})` }}>
+  <div>
     <div className="Main">
       <Header />
+      <Forecast />
     </div>
   </div>
 );

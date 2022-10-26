@@ -1,0 +1,10 @@
+.Main {
+  max-width: 500px;
+  margin: 10px auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  text-align: center;
+  font-family: "Karla", sans-serif;
+  font-weight: bold;
+  color: white;
+}
