@@ -1,13 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
+import axios from "axios";
 
 import "./Forecast.css";
 
-export default function Forecast() {
+export default function Forecast(props) {
+  let [temperature, setTemperature] = useState(null);
+  let url = `https://api.openweathermap.org/data/2.5/weather?q=Paris&appid=dee9a420d2a7b5a314d3260f8ca83eea&units=metric`;
+  function showTemperature(response) {
+    setTemperature(response.data.main.temp);
+  }
+  temperature = "Paris";
+  axios.get(url).then(showTemperature);
   return (
     <div>
       {" "}
       <div className="city">
-        <span id="city">Warsaw</span>, <span id="date">Sunday 14:00</span>
+        <span id="city">{temperature}</span>,{" "}
+        <span id="date">Sunday 14:00</span>
       </div>
       <div id="description">Cloudy</div>
       <div className="temperature">
