@@ -17,7 +17,7 @@ export default function Forecast(props) {
     setHumidity();
     setWind();
   }
-
+  let iconUrl = `http://openweathermap.org/img/wn/${icon}@2x.png`;
   let city = "Paris";
   axios.get(url).then(showWeather);
   return (
@@ -47,8 +47,10 @@ export default function Forecast(props) {
       </div>
       <div id="description">{description}</div>
       <div className="temperature">
-        <span id="temperature">☀{temperature}</span>°
+        <span id="temperature">{temperature}</span>°
         <span className="units">C</span>
+        <br></br>
+        <img src={iconUrl} />
       </div>
       <div className="last_section">
         Humidity <span id="humidity">60</span>% Wind

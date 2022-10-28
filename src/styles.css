@@ -24,3 +24,17 @@ form {
   position: relative;
   left: 10px;
 }
+
+.forecastContainer {
+  display: grid;
+  grid-template-columns: 80px 80px 80px 80px 80px 80px;
+}
+
+.days {
+  text-align: center;
+  border: 1px solid #163172;
+  margin: 10px;
+  line-height: 50px;
+  background-color: rgba(214, 228, 240, 0.7);
+  border-radius: 10px;
+}
