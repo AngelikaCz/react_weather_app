@@ -20,9 +20,25 @@ form {
   text-align: center;
 }
 
-.Header .form {
-  position: relative;
-  left: 10px;
+.form {
+  display: flex;
+  margin-top: 20px;
+}
+
+.searchInput {
+  border-radius: 5px;
+  height: 37px;
+  width: 350px;
+  margin-left: 15px;
+  margin-right: 10px;
+}
+
+.searchButton {
+  background-color: rgb(51, 44, 44);
+  color: white;
+  border-radius: 5px;
+  height: 40px;
+  width: 150%;
 }
 
 .forecastContainer {
@@ -32,9 +48,6 @@ form {
 
 .days {
   text-align: center;
-  border: 1px solid #163172;
   margin: 10px;
   line-height: 50px;
-  background-color: rgba(214, 228, 240, 0.7);
-  border-radius: 10px;
 }

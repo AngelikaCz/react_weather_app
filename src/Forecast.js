@@ -23,20 +23,20 @@ export default function Forecast(props) {
   return (
     <div>
       <form className="Header">
-        <div className="row">
-          <div className="col-9">
+        <div className="form">
+          <div>
             <input
               type="text"
-              className="form-control form"
+              className="searchInput"
               placeholder="Type your city here"
               id="city-name"
             />
           </div>
-          <div className="col-3">
+          <div>
             <input
               type="submit"
               value="Search"
-              className="btn btn-dark"
+              className="searchButton"
               id="search_button"
             />
           </div>
