@@ -57,27 +57,27 @@ export default function Forecast(props) {
       </div>
       <div className="forecastContainer">
         <div className="days">
-          Friday <br></br>{" "}
+          Friday<br></br> 15°
           <img src="http://openweathermap.org/img/wn/01d@2x.png" />
         </div>
         <div className="days">
-          Saturday <br></br>{" "}
+          Saturday <br></br>16°
           <img src="http://openweathermap.org/img/wn/02d@2x.png" />
         </div>
         <div className="days">
-          Sunday <br></br>{" "}
+          Sunday <br></br>23°
           <img src="http://openweathermap.org/img/wn/03d@2x.png" />
         </div>
         <div className="days">
-          Monday <br></br>{" "}
+          Monday <br></br>31°
           <img src="http://openweathermap.org/img/wn/01d@2x.png" />
         </div>
         <div className="days">
-          Tuesday <br></br>{" "}
+          Tuesday <br></br>19°
           <img src="http://openweathermap.org/img/wn/04d@2x.png" />
         </div>
         <div className="days">
-          Wednesday <br></br>{" "}
+          Wednesday <br></br>12°
           <img src="http://openweathermap.org/img/wn/09d@2x.png" />
         </div>
       </div>
