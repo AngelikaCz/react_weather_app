@@ -13,7 +13,26 @@ export default function Forecast(props) {
   axios.get(url).then(showTemperature);
   return (
     <div>
-      {" "}
+      <form className="Header">
+        <div className="row">
+          <div className="col-9">
+            <input
+              type="text"
+              className="form-control form"
+              placeholder="Type your city here"
+              id="city-name"
+            />
+          </div>
+          <div className="col-3">
+            <input
+              type="submit"
+              value="Search"
+              className="btn btn-dark"
+              id="search_button"
+            />
+          </div>
+        </div>
+      </form>{" "}
       <div className="city">
         <span id="city">{temperature}</span>,{" "}
         <span id="date">Sunday 14:00</span>
