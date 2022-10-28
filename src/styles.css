@@ -12,4 +12,15 @@
 .Background {
   background-image: url("./clouds_weather_app.jpg");
   max-width: 100%;
+  height: 1000px;
+}
+
+form {
+  padding: 10px;
+  text-align: center;
+}
+
+.Header .form {
+  position: relative;
+  left: 10px;
 }
