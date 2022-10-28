@@ -48,9 +48,7 @@ export default function Forecast(props) {
       <div id="description">{description}</div>
       <div className="temperature">
         <span id="temperature">{temperature}</span>°
-        <span className="units">C</span>
-        <br></br>
-        <img src={iconUrl} />
+        <span className="units">C</span> <br></br> <img src={iconUrl} />
       </div>
       <div className="last_section">
         Humidity <span id="humidity">60</span>% Wind
@@ -58,12 +56,30 @@ export default function Forecast(props) {
         <hr />
       </div>
       <div className="forecastContainer">
-        <div className="days">Friday</div>
-        <div className="days">Saturday</div>
-        <div className="days">Sunday</div>
-        <div className="days">Monday</div>
-        <div className="days">Tuesday</div>
-        <div className="days">Wednesday</div>
+        <div className="days">
+          Friday <br></br>{" "}
+          <img src="http://openweathermap.org/img/wn/01d@2x.png" />
+        </div>
+        <div className="days">
+          Saturday <br></br>{" "}
+          <img src="http://openweathermap.org/img/wn/02d@2x.png" />
+        </div>
+        <div className="days">
+          Sunday <br></br>{" "}
+          <img src="http://openweathermap.org/img/wn/03d@2x.png" />
+        </div>
+        <div className="days">
+          Monday <br></br>{" "}
+          <img src="http://openweathermap.org/img/wn/01d@2x.png" />
+        </div>
+        <div className="days">
+          Tuesday <br></br>{" "}
+          <img src="http://openweathermap.org/img/wn/04d@2x.png" />
+        </div>
+        <div className="days">
+          Wednesday <br></br>{" "}
+          <img src="http://openweathermap.org/img/wn/09d@2x.png" />
+        </div>
       </div>
     </div>
   );
