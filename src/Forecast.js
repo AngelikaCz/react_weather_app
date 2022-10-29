@@ -45,9 +45,9 @@ export default function Forecast(props) {
       <div className="city">
         <span id="city">{city}</span>, <span id="date">Sunday 14:00</span>
       </div>
-      <div id="description">{description}</div>
-      <div className="temperature">
-        <span id="temperature">{temperature}</span>°
+      <div className="description">{description}</div>
+      <div className="temperatureContainer">
+        <span className="temperature">{temperature}°</span>
         <span className="units">C</span> <br></br> <img src={iconUrl} />
       </div>
       <div className="last_section">
